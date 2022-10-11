@@ -1,0 +1,23 @@
+.container {
+    height: 300px;
+    width: 400px;
+    background-color: blue;
+    border-radius: 2rem;
+    overflow: hidden;    
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+
+.elemento {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

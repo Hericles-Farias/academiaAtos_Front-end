@@ -1,9 +1,11 @@
 .container {
+    background-color: blueviolet;
     height: 300px;
     width: 400px;
 }
 
 .elemento {
+    background-color: orange;
     width: 100px;
     height: 50px;
 }
