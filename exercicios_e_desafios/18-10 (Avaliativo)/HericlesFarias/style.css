@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* font-family: 'Titillium Web', sans-serif; */
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: #171717;    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #555;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #171717;
+}
+main{
+    background: black;
+    box-shadow: 0 0 50px rgba(0,0,0,0.3);
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    font-weight: 200;
+    cursor: default;
+    color:white;
+}
+.invi{
+    width: 63px;
+    height: 63px;
+       
+}
+.n-metal{
+    background: #9dc63e;
+}
+.container-tp1, .container-tp2{
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    margin-bottom: 20PX;
+}
+
+.container-t{
+    max-width: 1100px;
+    background: black;
+    
+
+}
+.elemento, .elementot{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 63px;
+    height: 63px;
+    border: 1px solid #555;
+}
+.elemento2{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 120px;
+    height: 120px;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+.num2{
+    text-align: right;
+    margin-right: 3px;
+    font-size: 12px;
+    line-height: 7px;
+    color:white;
+}
+.sigla2{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color:white;
+}
+.nome2{
+    text-align: center;
+    font-size: 10px;
+    color:white;
+}
+.legenda{
+    cursor: default;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background: #171717;
+padding: 20PX 20PX 20PX 20PX;
+}
+
+.cor{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: 145px;
+    top: 6px;
+    border: 1px solid white;
+    border-radius: 6px;
+    
+}
+
+.nmetal{
+    background: #a1d344;
+
+}
+
+.gasesn{
+    background: #3d9ee3;
+}
+.metaisdetrans{
+    background: #eb8e8e;
+}
+.metaisalc{
+    background: #f1b200;
+}
+.metaisalcterr{
+    background: #eada00;
+}
+.semimet{
+    background: #4db6ac;
+}
+.halog{
+    background: #70cbeb;
+}
+.outrosmetais{
+    background: #a2c7d3;
+}
+.lantan{
+    background: #90e3e9;
+}
+.actinidios{
+    background: #dcadd6;
+}
+h2{
+    font-weight: 300;
+    text-align: center;
+    color: white;
+}
+.elemento3{
+    display: grid;
+    grid-template-columns: repeat(6 ,1fr);
+    color:white;
+
+    
+}
+.elemento:hover{
+    transition:.2s;
+    transform:scale(1.2);
+    cursor:pointer;
+    z-index:2;
+    border-radius: 6px;
+    }
+.num{
+    text-align: right;
+    margin-right: 3px;
+    font-size: 12px;
+    line-height: 7px;
+}
+.sigla{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.nome{
+    text-align: center;
+    font-size: 10px;
+}
+
+/*TABELA 2*/
+table{
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 1000px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.3);
+    cursor: default;
+    
+}
+table caption span{
+    font-weight: 700;
+}
+table caption{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight:300;
+    text-align: center;
+    color:white;
+    
+}
+table thead{
+    text-transform: uppercase;
+    background: #171717;
+    color: white;
+}
+table tr{
+    border: 1px solid #ddd;
+}
+
+table tbody td:nth-child(1),
+table tbody td:nth-child(4),
+table tbody td:nth-child(5),
+table tbody td:nth-child(6){
+    text-align: center;
+}
+table tbody tr:hover{
+    background: #f1f1f1;
+    cursor: default;
+}
+table th{
+    color:white;
+}
+table th,
+table td{
+    padding: 8px 8px;
+    
+}
+
+  .asterisco{
+    cursor: default;
+  }
