@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+    <title>Sleeper</title>
+</head>
+<body>
+
+    <main>
+        <div class="top">
+
+            <div class="lvlAndTimer">
+                <div>
+                Level : <span id="level" class="lvl"></span>
+                </div>
+                <div>
+                    Timer : <span id="time"></span>
+                </div>
+        
+            </div>
+            <button id="start" class="btn-start" onclick="startGame()">Iniciar Jogo</button>
+
+        </div>
+
+        <div class="center">
+
+            <div class="info">
+                <span id="targetText">Seu Alvo é: </span>
+                <span id="target"></span>
+                <span id="answer" class="hide">Answer</span>
+                
+                <div class="score">
+                    <span>Score:</span>
+                    <span id="score">0</span>
+                </div>
+
+                <div id="storeDiv" class="store hide">
+                    <div>
+                        Deseja Salvar no Ranking?
+                    </div>
+                    <div>
+                        <form action="javascript:void(0);" id="myForm">
+                        Name: <input id="userName" type="text">
+                        </form>
+                        
+                    </div>
+                    <div>
+                        <button form="myForm" id="btn-save" type="submit" onclick="saveToJson()">Salvar</button>
+                        <button id="btn-dsave" onclick="hideSave()">Não Salvar</button>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="game">
+                <div class="row">
+                    <div id="q1" class="q"></div>
+                    <div id="q2" class="q"></div>
+                    <div id="q3" class="q"></div>
+                </div>
+                <div class="row">
+                    <div id="q4" class="q"></div>
+                    <div id="q5" class="q"></div>
+                    <div id="q6" class="q"></div>
+                </div>
+                <div class="row">
+                    <div id="q7" class="q"></div>
+                    <div id="q8" class="q"></div>
+                    <div id="q9" class="q"></div>
+                </div>
+            </div>
+
+        </div>  
+        
+        <div id="rank" class="ranking">
+
+            <div>
+                <button id="btn-rk" class="btn-rank" onclick="getScores()">Show Ranking</button>
+            </div>
+            
+            
+            <div class="players">
+                <div id="userSc" class="userSc">
+                    <div class="userSx">
+                        <div>#</div>
+                        <div>Name</div>
+                        <div>Score</div>
+                    </div>
+            </div>
+
+            </div>
+            
+        </div>
+
+    </main>
+
+</body>
+
+<!-- <script type="text/javascript" src="FileSaver.min.js"></script> -->
+<script src="main.js"></script>
+
+
+
+</html>
